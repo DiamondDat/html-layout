@@ -138,13 +138,17 @@ footer {
 #bussiness {
   position: relative;
   margin-bottom: 50px;
+  .col-md-12 {
+    margin-top: 40px;
+  }
 }
 
 .teaser div {
   position: absolute;
   color: white;
-  top: 5%;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .teaser img,
@@ -158,26 +162,12 @@ footer {
   News
   ========================================
 */
-
 #news {
-  table {
-    margin-bottom: 50px;
+  .col-md-12 {
+    margin-top: 40px;
   }
-  th,
-  td {
-    padding-bottom: 50px;
-    vertical-align: top;
-  }
-  th {
-    padding-right: 10px;
-    text-align: left;
-    width: 12%;
-  }
-  td {
-    width: 60%;
-    text-align: justify;
-  }
-  td img {
+  margin-bottom: 50px;
+  img {
     float: right;
     border-radius: 5px;
     width: 100%;

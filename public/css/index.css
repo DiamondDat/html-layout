@@ -235,6 +235,9 @@ footer #footer-logo img {
   Media
   ==================================
 */
+#media {
+  margin-bottom: 100px;
+}
 #media div {
   padding-top: 10px;
   padding-bottom: 10px;

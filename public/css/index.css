@@ -177,6 +177,12 @@ footer #footer-logo img {
 #news .col-md-12 {
   margin-top: 40px;
 }
+#news .col-lg-10 {
+  padding-left: 30px;
+}
+#news .col-lg-7 {
+  padding-left: 30px;
+}
 #news img {
   float: right;
   border-radius: 5px;
@@ -186,6 +192,7 @@ footer #footer-logo img {
   margin-top: 5px;
   color: red;
   border: solid 1px red;
+  font-size: 15px;
 }
 
 .list-event li {

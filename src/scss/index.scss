@@ -140,18 +140,6 @@ footer {
   width: 100%;
 }
 
-@media (max-width:1200px) {
-  .hero {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url('/img/mobile-header.png');
-    height: 100vh;
-    width: 100%;
-  }
-}
-
-
 // ========================================
 // Bussiness
 // ========================================
@@ -366,10 +354,34 @@ footer {
 
   .col-md-12 img {
     width: 100%;
-    margin-bottom: 40px;
+  }
+}
+
+// ==================================
+// Banner
+// ==================================
+
+@media (max-width:1200px) {
+  .hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url('/img/mobile-header.png');
+    height: 100vh;
+    width: 100%;
   }
 
-  div:last-of-type {
-    margin-bottom: 80px;
+  #facility {
+    display: none;
+  }
+
+  #banderol {
+    .col-md-12 img {
+      margin-bottom: 25px;
+    }
+
+    .col-md-12 img:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 }

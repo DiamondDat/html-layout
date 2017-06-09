@@ -114,7 +114,7 @@ footer {
     color: $white;
   }
 
-  #footer-logo img {
+  img {
     display: block;
     float: right;
     padding-right: 0;
@@ -145,7 +145,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url('/img/\u{5916}\u{89b3}.png');
+    background: url('/img/mobile-header.png');
     height: 100vh;
     width: 100%;
   }
@@ -212,8 +212,9 @@ footer {
   .tag {
     border: solid 1px $red;
     color: $red;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 5px;
+    width: 70%;
   }
 }
 
@@ -233,8 +234,7 @@ footer {
 // Button
 // ========================================
 
-
-#btn-more {
+.btn-more {
   border-radius: 5px;
   color: $white;
   display: block;
@@ -277,7 +277,7 @@ footer {
   }
 }
 
-#btn-red {
+.btn-red {
   border-radius: 5px;
   color: $white;
   float: right;
@@ -342,7 +342,7 @@ footer {
   }
 }
 
-#btn {
+.btn-facility {
   background-color: $black;
   border-radius: 0 0 10px 10px;
   color: $white;

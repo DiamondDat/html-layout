@@ -103,7 +103,7 @@
           files: [
             '<%= scrPath %>/html/**/*.html'
           ],
-          task: ['html']
+          tasks: ['html']
         }
       }
     });

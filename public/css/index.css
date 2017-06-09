@@ -145,23 +145,21 @@ footer #footer-logo img {
   ========================================
 */
 #bussiness {
-  position: relative;
   margin-bottom: 50px;
 }
 #bussiness .col-md-12 {
   margin-top: 40px;
 }
 
-.teaser div {
+.teaser h4 {
   position: absolute;
   color: white;
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
+  text-align: center;
 }
 
 .teaser img,
 .banner img {
+  position: relative;
   border-radius: 5px;
   display: block;
   width: 100%;

@@ -3,44 +3,51 @@
   <head>
     <title>Hello</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
-  <nav class="navbar navbar-toggleable-md navbar-light">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <nav class="navbar-toggler-icon"></nav>
-  </button>
-  <a id="header-logo" class="navbar-brand" href="/">
-    <img src="/img/header-logo.png">
-  </a>
+    <header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span><br>
+          <!-- <span class="menu-title">MENU</span> -->
+        </button>
+        <a class="navbar-brand" href="#"><img src="/img/header-logo.png" alt="header logo"></a>
+      </div>
 
-  <div class="collapse navbar-collapse d-flex flex-column" id="navbarSupportedContent">
-      <ul id="setting" class="navbar-nav p-2">
-        <li class="nav-item">
-          <select name="lang">
-            <option value="en" selected>English</option>
-            <option value="jp">Japan</option>
-            <option value="vn">Vietnam</option>
-          </select>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">お知らせ</a></li>
-      </ul>
-      <ul class="navbar-nav p-2">
-        <li class="nav-item">
-          <a class="nav-link" href="#">施設を探す</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">キャンペーン</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">大江戸温泉物語の想い</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">ご予約</a>
-        </li>
-      </ul>
-</nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="setting">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">お知らせ</a></li>
+            <li>
+              <select name="lang">
+                <option value="en" selected>English</option>
+                <option value="jp">Japan</option>
+                <option value="vn">Vietnam</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>施設を探す</a></li>
+            <li><a>キャンペーン</a></li>
+            <li><a>大江戸温泉物語の想い</a></li>
+            <li><a>ご予約</a></li>
+          </ul>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </header>
     
 <!-- Hero -->
@@ -51,15 +58,15 @@
   <!-- Bussiness -->
   <div id="bussiness" class="row">
     <div class="teaser col-lg-4 col-md-12">
-      <img src="/img/bussiness/レイヤー 585.png">
-      <h4>事業案内<h4>
+      <img src="/img/bussiness/レイヤー 585.png" alt="レイヤー 585">
+      <h4>事業案内</h4>
     </div><!--
     --><div class="teaser col-lg-4 col-md-12">
-      <img src="/img/bussiness/Job_10387.png">
+      <img src="/img/bussiness/Job_10387.png" alt="Job_10387">
       <h4>代表あいさつ</h4>
     </div><!--
     --><div class="teaser col-lg-4 col-md-12">
-      <img src="/img/bussiness/_MG_2311.png">
+      <img src="/img/bussiness/_MG_2311.png" alt="_MG_2311">
       <h4>沿革</h4>
     </div>
   </div>
@@ -70,7 +77,7 @@
     <h2>ニュース</h2>
     <div class="row">
     <div class="col-lg-2 col-md-12">
-      <time datetime="2017-06-17">2017.06.17</time></br>
+      <time datetime="2017-06-17">2017.06.17</time><br>
       <span class="tag">ニュースリリース</span>
     </div>
     <div class="col-lg-7 col-md-12">
@@ -80,12 +87,12 @@
       </p>
     </div>
     <div class="col-lg-3 col-md-12">
-      <img src="/img/news/レイヤー 53.png">
+      <img src="/img/news/レイヤー 53.png" alt="レイヤー 53">
     </div>
   </div>
   <div class="row">
     <div class="col-lg-2 col-md-12">
-      <time datetime="2017-06-17">2017.06.17</time></br>
+      <time datetime="2017-06-17">2017.06.17</time><br>
       <span class="tag">トピックス</span>
     </div>
     <div class="col-lg-10 col-md-12">
@@ -95,7 +102,7 @@
   </div>
   <div class="row">
     <div class="col-lg-2 col-md-12">
-      <time datetime="2017-06-17">2017.06.17</time></br>
+      <time datetime="2017-06-17">2017.06.17</time><br>
       <span class="tag">ニュースリリース</span>
     </div>
     <div class="col-lg-7 col-md-12">
@@ -103,12 +110,12 @@
       大江戸温泉物語をご利用頂きましてありがとうございます。今秋、奥州三名湯のひとつ宮城県鳴子温泉に2つの大江戸温泉物語グループの宿が、誕生いたします。鳴子温泉で最大級の「百畳露天風呂」や、「展望露天風呂」など自慢のお風呂と季節の会席料理をお楽しみください。
     </div>
     <div class="col-lg-3 col-md-12">
-      <img src="/img/news/レイヤー 52.png">
+      <img src="/img/news/レイヤー 52.png" alt="レイヤー 52">
     </div>
   </div>
   <div class="row">
     <div class="col-lg-2 col-md-12">
-      <time datetime="2017-06-17">2017.06.17</time></br>
+      <time datetime="2017-06-17">2017.06.17</time><br>
       <span class="tag">トピックス</span>
     </div>
     <div class="col-lg-7 col-md-12">
@@ -116,12 +123,12 @@
       大江戸温泉物語をご利用頂きましてありがとうございます。今秋、奥州三名湯のひとつ宮城県鳴子温泉に2つの大江戸温泉物語グループの宿が、誕生いたします。鳴子温泉で最大級の「百畳露天風呂」や、「展望露天風呂」など自慢のお風呂と季節の会席料理をお楽しみください。
     </div>
     <div class="col-lg-3 col-md-12">
-      <img src="/img/news/レイヤー 50.png">
+      <img src="/img/news/レイヤー 50.png" alt="レイヤー 50">
     </div>
   </div>
   <div class="row">
     <div class="col-lg-2 col-md-12">
-      <time datetime="2017-06-17">2017.06.17</time></br>
+      <time datetime="2017-06-17">2017.06.17</time><br>
       <span class="tag">ニュースリリース</span>
     </div>
     <div class="col-lg-10 col-md-12">
@@ -185,28 +192,28 @@
     <h2>大江戸温泉物語の運営施設</h2>
 
     <div id="arawa">
-      <img src="/img/レイヤー 668.png">
+      <img src="/img/awara.png" alt="awara">
     </div>
 
-    <div class="thumbnail">
+    <div class="thumbnails">
       <ul>
         <li>
-          <img src="/img/thumbnail/レイヤー 807.png">
+          <img src="/img/thumbnail/レイヤー 807.png" alt="レイヤー 807">
         </li><!--
         --><li>
-          <img src="/img/thumbnail/レイヤー 582.png">
+          <img src="/img/thumbnail/レイヤー 582.png" alt="レイヤー 582">
           <h6>伊東 ホテルニュー岡部</h6>
         </li><!--
         --><li>
-          <img src="/img/thumbnail/レイヤー 806.png">
+          <img src="/img/thumbnail/レイヤー 806.png" alt="レイヤー 806">
           <h6>伊勢志摩</h6>
         </li><!--
         --><li>
-          <img src="/img/thumbnail/レイヤー 582.png">
+          <img src="/img/thumbnail/レイヤー 582.png" alt="レイヤー 582">
           <h6>芦原温泉 あわら</h6>
         </li><!--
         --><li>
-          <img src="img/thumbnail/レイヤー 808.png">
+          <img src="img/thumbnail/レイヤー 808.png" alt="レイヤー 808">
           <h6>ホテルレオマの森</h6>
         </li>
       </ul>
@@ -217,13 +224,13 @@
   <!-- Banners -->
   <div id="banderol" class="row">
     <div class="col-lg-4 col-md-12 banner">
-      <img src="/img/banner/banner_recruit.png">
+      <img src="/img/banner/banner_recruit.png" alt="banner_recruit">
     </div>
     <div class="col-lg-4 col-md-12 banner">
-      <img src="/img/banner/banner_group-site.png">
+      <img src="/img/banner/banner_group-site.png" alt="banner_recruit">
     </div>
     <div class="col-lg-4 col-md-12 banner">
-      <img src="/img/banner/banner_film-commission.png">
+      <img src="/img/banner/banner_film-commission.png" alt="banner_recruit">
     </div>
   </div>
 
@@ -252,7 +259,7 @@
         </ul>
       </div>
       <div id="footer-logo" class="col-lg-3 col-md-12">
-        <img src="/img/footer-logo.png">
+        <img src="/img/footer-logo.png" alt="footer logo">
       </div>
     </div>
     <small>Copyright&copy;Oedo-Onsen-Monogatari Co.,Ltd.</small>

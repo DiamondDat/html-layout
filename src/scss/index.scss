@@ -179,14 +179,7 @@ footer {
 #news {
   margin-bottom: 50px;
 
-  .col-md-12 {
-    margin-top: 40px;
-  }
-
-  .col-lg-10 {
-    padding-left: 30px;
-  }
-
+  .col-lg-10,
   .col-lg-7 {
     padding-left: 30px;
   }
@@ -200,6 +193,7 @@ footer {
   .tag {
     border: solid 1px $red;
     color: $red;
+    padding: 5px;
     font-size: 12px;
     margin-top: 5px;
     width: 70%;
@@ -297,7 +291,7 @@ footer {
   padding: 0;
 
   h2 {
-    margin: 100px auto 50px;
+    margin: 50px auto 50px;
   }
 }
 
@@ -366,6 +360,19 @@ footer {
 // ==================================
 
 @media (max-width:1200px) {
+  // ================================
+  //  Modified Bootstrap Grid
+  // ================================
+
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-7 {
+    width: 100%;
+  }
+
   .hero {
     background-position: center center;
     background-repeat: no-repeat;
@@ -375,17 +382,59 @@ footer {
     width: 100%;
   }
 
-  #facility {
-    display: none;
+ #bussiness {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .teaser img {
+    margin-top: 25px;
+  }
+ }
+
+ #news {
+  .row {
+    margin-bottom: 40px;
+  }
+ }
+
+ #facility {
+  display: hidden;
+ }
+
+#banderol {
+  margin-top: 90px;
+
+  .banner img {
+    margin-bottom: 25px;
   }
 
-  #banderol {
-    .col-md-12 img {
-      margin-bottom: 25px;
-    }
+  .banner img:last-of-type {
+    margin-bottom: 40px;
+  }
+}
 
-    .col-md-12 img:last-of-type {
-      margin-bottom: 40px;
-    }
+.btn-more {
+  border-radius: 5px;
+  color: $white;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  margin: 50px auto;
+  padding-top: 1.5%;
+  text-align: center;
+  width: 50%;
+
+  span {
+    background-color: $white;
+    border-radius: 2px;
+    color: $red;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 1px 3px;
+  }
+  }
+
+  .btn-more:hover {
+  text-decoration: none;
   }
 }

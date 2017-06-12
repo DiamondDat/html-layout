@@ -189,6 +189,10 @@ footer img {
   padding: 1px 3px;
 }
 
+.btn-more:hover {
+  text-decoration: none;
+}
+
 #media {
   margin-bottom: 100px;
 }

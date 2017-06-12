@@ -66,6 +66,7 @@ header {
 }
 header .navbar-collapse,
 header .navbar-default {
+  background: none;
   border-bottom: 0;
 }
 header .navbar-collapse {
@@ -150,9 +151,9 @@ footer img {
 #news .tag {
   border: solid 1px #f00;
   color: #f00;
-  padding: 5px;
   font-size: 12px;
   margin-top: 5px;
+  padding: 5px;
   width: 70%;
 }
 
@@ -184,7 +185,6 @@ footer img {
   margin-right: 10px;
   padding: 1px 3px;
 }
-
 .btn-more:hover {
   text-decoration: none;
 }
@@ -224,7 +224,7 @@ footer img {
   padding: 0;
 }
 #facility h2 {
-  margin: 50px auto 50px;
+  margin: 50px auto;
 }
 
 #arawa img {
@@ -287,17 +287,17 @@ footer img {
   }
 
   .hero {
+    background-image: url("/img/mobile-header.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/img/mobile-header.png");
     height: 1000px;
     width: 100%;
   }
 
   #bussiness {
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
   #bussiness .teaser img {
     margin-top: 25px;
@@ -335,9 +335,5 @@ footer img {
     font-size: 15px;
     margin-right: 10px;
     padding: 1px 3px;
-  }
-
-  .btn-more:hover {
-    text-decoration: none;
   }
 }

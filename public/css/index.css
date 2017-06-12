@@ -281,8 +281,8 @@ footer img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url("/img/mobile-header.png");
-    height: 100vh;
+    background-image: url("/img/mobile-header.png");
+    height: 1000px;
     width: 100%;
   }
 

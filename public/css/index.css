@@ -113,9 +113,6 @@ footer img {
 #bussiness {
   margin-bottom: 50px;
 }
-#bussiness .col-md-12 {
-  margin-top: 40px;
-}
 
 .teaser {
   position: relative;
@@ -136,6 +133,9 @@ footer img {
 }
 
 #news {
+  margin-bottom: 50px;
+}
+#news .row {
   margin-bottom: 50px;
 }
 #news .col-lg-10,

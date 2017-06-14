@@ -1,0 +1,106 @@
+@media (max-width:1200px) {
+  // ================================
+  //  Modified Bootstrap Grid
+  // ================================
+
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    background-image: url('/img/mobile-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+  }
+
+  #bussiness {
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    .teaser img {
+      margin-top: 25px;
+    }
+   }
+
+  #news {
+    .row {
+      margin-bottom: 40px;
+      display: flex;
+      flex-flow: column;
+
+      .col-lg-3 {
+        order: 1;
+      }
+
+      .col-lg-2 {
+        order: 2;
+      }
+
+      .col-lg-7 {
+        order: 3;
+      }
+
+      .col-lg-10 {
+        order: 4;
+      }
+    }
+   }
+
+  #banderol {
+    margin-top: 90px;
+
+    .banner img {
+      margin-bottom: 25px;
+    }
+
+    .banner img:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn-more {
+    border-radius: 5px;
+    color: $white;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    margin: 50px auto;
+    padding-top: 1.5%;
+    text-align: center;
+    width: 50%;
+
+    span {
+      background-color: $white;
+      border-radius: 2px;
+      color: $red;
+      font-size: 15px;
+      margin-right: 10px;
+      padding: 1px 3px;
+    }
+  }
+
+  .onsen-facility {
+    display: flex;
+    flex-flow: column;
+
+    .col-lg-7 {
+      order: 1;
+    }
+
+    .col-lg-5 {
+      order: 2;
+    }
+  }
+
+  .onsen-facility.small {
+    margin-bottom: 10px !important;
+    width: 100%;
+  }
+}

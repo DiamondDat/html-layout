@@ -1,0 +1,21 @@
+.thumbnails-wth-btn {
+  li {
+    margin-right: 15px;
+  }
+
+  li:first-child,
+  li:last-child {
+    cursor: pointer;
+    padding-bottom: 8%;
+    top: 50%;
+    width: 5%;
+  }
+
+  li:first-child {
+    margin-right: 5px;
+  }
+
+  li:last-child {
+    margin-left: 5px;
+  }
+}

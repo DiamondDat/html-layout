@@ -1,0 +1,193 @@
+// ==================================
+// Jumbotron
+// ==================================
+
+.hero {
+  background-image: url('/img/home_hero_01_lg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  margin: 0 0 50px;
+  width: 100%;
+}
+
+// ========================================
+// Bussiness
+// ========================================
+
+#bussiness {
+  margin-bottom: 50px;
+}
+
+.teaser {
+  position: relative;
+  text-align: center;
+
+  h4 {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+}
+
+.teaser img,
+.banner img {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+// ========================================
+// News
+// ========================================
+
+#news {
+  margin-bottom: 50px;
+
+  .row {
+    margin-bottom: 50px;
+  }
+
+  .col-lg-10,
+  .col-lg-7 {
+    padding-left: 30px;
+  }
+
+  img {
+    border-radius: 5px;
+    float: right;
+    width: 100%;
+  }
+}
+
+.tag {
+  border: solid 1px $red;
+  color: $red;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 70%;
+}
+
+.list-event {
+  li {
+    border-bottom: 1px solid $black;
+    padding: 15px 0;
+
+    &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }
+  }
+}
+
+// ==================================
+// Media
+// ==================================
+
+#media {
+  margin-bottom: 100px;
+
+  div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .row {
+    border-bottom: solid 1px $black;
+  }
+
+  .col-md-8 {
+    text-align: justify;
+  }
+}
+
+.btn-red {
+  border-radius: 5px;
+  color: $white;
+  float: right;
+  font-size: 10px;
+  margin-top: 25px;
+  width: 180px;
+
+  span {
+    background-color: $white;
+    border-radius: 2px;
+    color: $red;
+    font-size: 8px;
+    margin-right: 4px;
+    padding: 1px 3px;
+  }
+}
+
+// ==================================
+// Facility
+// ==================================
+
+#facility {
+  padding: 0;
+
+  h2 {
+    margin: 50px auto;
+  }
+}
+
+#arawa img {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  width: 100%;
+}
+
+.thumbnails {
+  margin-top: 5px;
+  text-align: center;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+
+    h6 {
+      color: $white;
+      position: absolute;
+      top: 70px;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.btn-facility {
+  background-color: $black;
+  border-radius: 0 0 10px 10px;
+  color: $white;
+  display: block;
+  font-size: 15px;
+  height: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+// ==================================
+// Banner
+// ==================================
+
+#banderol {
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  .col-md-12 img {
+    width: 100%;
+  }
+}

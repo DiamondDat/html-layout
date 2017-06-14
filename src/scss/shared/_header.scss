@@ -1,0 +1,28 @@
+// ==================================
+// Header
+// ==================================
+
+header {
+  background-color: $white;
+  border-bottom: 1px solid $black;
+  margin-bottom: 0;
+  text-align: right;
+
+  .navbar-collapse,
+  .navbar-default {
+    background: none;
+    border-bottom: 0;
+  }
+
+  .navbar-collapse {
+    float: right;
+  }
+
+  select {
+    margin-top: 15px;
+  }
+}
+
+.setting li a {
+  text-decoration: underline;
+}

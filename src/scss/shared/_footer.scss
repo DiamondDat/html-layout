@@ -1,0 +1,26 @@
+// ==================================
+// Footer
+// ==================================
+
+footer {
+  background-color: $black;
+  padding-bottom: 40px;
+  padding-top: 41px;
+  width: 100%;
+
+  a,
+  a:hover {
+    color: $white;
+  }
+
+  img {
+    display: block;
+    float: right;
+    padding-right: 0;
+  }
+}
+
+.primary-footer small {
+  color: $white;
+  float: right;
+}

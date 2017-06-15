@@ -15,7 +15,7 @@
 // ==================================
 // Order
 // ==================================
-#order {
+.order {
   background-image: url('/img/logo.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     text-align: left;
   }
 
-  .col-lg-6 {
+  .col-md-6 {
     border-top: $border-black;
 
     &:first-child {
@@ -41,11 +41,11 @@
     }
   }
 
-  .col-lg-5 {
+  .col-md-5 {
     border-right: $border-black;
   }
 
-  .col-lg-4 {
+  .col-md-4 {
     border-right: $border-black;
     border-top: $border-black;
 
@@ -54,7 +54,7 @@
     }
   }
 
-  .col-lg-2 {
+  .col-md-2 {
     padding: 0 !important;
     button {
       height: 79px;
@@ -68,7 +68,7 @@
 }
 
 .call-for-action {
-  display:block;
+  display: block;
   height: 25%;
   margin: 25px auto 50px;
   width: 70%;
@@ -97,7 +97,7 @@
 // Map
 // ==================================
 
-#map {
+.map {
   img {
     display: block;
     width: 100%;
@@ -108,7 +108,7 @@
 // Banner Area
 // ==================================
 
-#bannerarea {
+.bannerarea {
   background-image: url('/img/bannerarea/bannerarea.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +133,7 @@
   }
 
   .text {
-    color: white;
+    color: $white;
     font-size: 18px;
     left: 50%;
     overflow: hidden;
@@ -153,13 +153,13 @@
       position: relative;
     }
 
-    li:hover .overlay {
+    &:hover .overlay {
       height: 30%;
     }
   }
 
   .memo {
-    border-top: solid 10px green;
+    border-top: solid 10px #55866b;
   }
 
   .nishiizu {
@@ -167,11 +167,11 @@
   }
 
   .seafood {
-    border-top: solid 10px orange;
+    border-top: solid 10px #e8922c;
   }
 
   .free-bus {
-    border-top: solid 10px pink;
+    border-top: solid 10px #d0121b;
   }
 }
 
@@ -278,24 +278,33 @@ li.active {
   li {
     display: inline-block;
     float: left;
-    margin-right: 5px;
+    margin-right: 1.2%;
     opacity: .6;
     width: 24%;
-
-    img {
-      display: block;
-      padding-left: 0;
-      width: 100%;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
+
+  &:hover .text {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.faci-description .text {
+  display: none;
 }
 
 .small {
@@ -303,7 +312,25 @@ li.active {
   width: 80%;
 
   p {
-    font-size: 20px !important;
+    font-size: 15px !important;
+  }
+
+  ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 1.4%;
+    opacity: .6;
+    width: 23.6%;
+  }
+
+  img {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -334,11 +361,11 @@ li.active {
   }
 }
 
-#feature {
+.feature {
   margin: 0 auto;
   width: 80%;
 
-  .col-lg-6 {
+  .col-md-6 {
     padding-top: 30px;
   }
 
@@ -369,7 +396,7 @@ li.active {
 // Feature
 // ========================================
 
-#info {
+.info {
   background-image: url('/img/info.png');
   background-repeat: no-repeat;
   background-size: cover;

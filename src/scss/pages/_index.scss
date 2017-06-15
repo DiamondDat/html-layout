@@ -16,7 +16,7 @@
 // Bussiness
 // ========================================
 
-#bussiness {
+.bussiness {
   margin-bottom: 50px;
 }
 
@@ -43,7 +43,7 @@
 // News
 // ========================================
 
-#news {
+.news {
   margin-bottom: 50px;
 
   .row {
@@ -78,8 +78,8 @@
   }
 
   &:hover {
-  cursor: pointer;
-  text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 
@@ -87,7 +87,7 @@
 // Media
 // ==================================
 
-#media {
+.media {
   margin-bottom: 100px;
 
   div {
@@ -126,7 +126,7 @@
 // Facility
 // ==================================
 
-#facility {
+.facility {
   padding: 0;
 
   h2 {
@@ -134,7 +134,7 @@
   }
 }
 
-#arawa img {
+.arawa img {
   border-radius: 5px 5px 0 0;
   display: block;
   width: 100%;
@@ -183,7 +183,7 @@
 // Banner
 // ==================================
 
-#banderol {
+.banderol {
   margin-bottom: 50px;
   margin-top: 50px;
 

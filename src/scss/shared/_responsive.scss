@@ -11,7 +11,7 @@
     width: 100%;
   }
 
-  #bussiness {
+  .bussiness {
     margin-bottom: 40px;
     margin-top: 40px;
 
@@ -20,41 +20,23 @@
     }
    }
 
-  #news {
+  .news {
     .row {
       margin-bottom: 40px;
-      display: flex;
-      flex-flow: column;
-
-      .col-md-3 {
-        order: 1;
-      }
-
-      .col-md-2 {
-        order: 2;
-      }
-
-      .col-md-7 {
-        order: 3;
-      }
-
-      .col-md-10 {
-        order: 4;
-      }
     }
    }
 
-   .col-md-2 {
+  .col-md-2 {
     padding: 0 !important;
 
-      button {
-        height: 79px;
-        width: 100%;
-        text-align: center;
-      }
+    button {
+      height: 79px;
+      text-align: center;
+      width: 100%;
     }
+  }
 
-  #banderol {
+  .banderol {
     margin-top: 90px;
 
     .banner img {
@@ -101,17 +83,6 @@
 
   .map img {
     display: none;
-  }
-
-  .onsen-facility {
-
-    .col-md-7 {
-      order: 1;
-    }
-
-    .col-md-5 {
-      order: 2;
-    }
   }
 
   .onsen-facility.small {

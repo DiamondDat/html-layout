@@ -1,14 +1,15 @@
 @charset 'UTF-8';
 
-@import 'lib/variables';
+@import 'shared/variables';
 @import 'shared/sanitize';
 @import 'shared/grid';
+@import 'shared/responsive';
 @import 'shared/typography';
 @import 'shared/header';
 @import 'shared/footer';
-@import 'shared/btn-more';
-@import 'shared/thumbnails-wth-btn';
 
-@import 'layout/home';
-@import 'layout/index';
-@import 'layout/responsive';
+@import 'elements/btn-more';
+@import 'elements/thumbnails-wth-btn';
+
+@import 'pages/home';
+@import 'pages/index';

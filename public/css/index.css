@@ -52,6 +52,85 @@ table {
   padding-right: 0;
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    background-image: url("/img/mobile-header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .bussiness {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .bussiness .teaser img {
+    margin-top: 25px;
+  }
+
+  .news .row {
+    margin-bottom: 40px;
+  }
+
+  .col-md-2 {
+    padding: 0 !important;
+  }
+  .col-md-2 button {
+    height: 79px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .banderol {
+    margin-top: 90px;
+  }
+  .banderol .banner img {
+    margin-bottom: 25px;
+  }
+  .banderol .banner img:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .btn-more {
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    margin: 50px auto;
+    padding-top: 1.5%;
+    text-align: center;
+    width: 50%;
+  }
+  .btn-more span {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #cf1922;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 1px 3px;
+  }
+
+  .thumbnails-wth-btn li:first-child,
+  .thumbnails-wth-btn li:last-child {
+    display: none;
+  }
+
+  .directions {
+    display: none;
+  }
+
+  .map img {
+    display: none;
+  }
+
+  .onsen-facility.small {
+    margin-bottom: 10px !important;
+    width: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -489,7 +568,7 @@ li.active {
   width: 100%;
 }
 
-#bussiness {
+.bussiness {
   margin-bottom: 50px;
 }
 
@@ -511,17 +590,17 @@ li.active {
   width: 100%;
 }
 
-#news {
+.news {
   margin-bottom: 50px;
 }
-#news .row {
+.news .row {
   margin-bottom: 50px;
 }
-#news .col-lg-10,
-#news .col-lg-7 {
+.news .col-lg-10,
+.news .col-lg-7 {
   padding-left: 30px;
 }
-#news img {
+.news img {
   border-radius: 5px;
   float: right;
   width: 100%;
@@ -545,17 +624,17 @@ li.active {
   text-decoration: underline;
 }
 
-#media {
+.media {
   margin-bottom: 100px;
 }
-#media div {
+.media div {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-#media .row {
+.media .row {
   border-bottom: solid 1px #000;
 }
-#media .col-md-8 {
+.media .col-md-8 {
   text-align: justify;
 }
 
@@ -576,14 +655,14 @@ li.active {
   padding: 1px 3px;
 }
 
-#facility {
+.facility {
   padding: 0;
 }
-#facility h2 {
+.facility h2 {
   margin: 50px auto;
 }
 
-#arawa img {
+.arawa img {
   border-radius: 5px 5px 0 0;
   display: block;
   width: 100%;
@@ -624,111 +703,10 @@ li.active {
   width: 100%;
 }
 
-#banderol {
+.banderol {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-#banderol .col-md-12 img {
+.banderol .col-md-12 img {
   width: 100%;
-}
-
-@media (max-width: 1200px) {
-  .hero {
-    background-image: url("/img/mobile-header.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    width: 100%;
-  }
-
-  #bussiness {
-    margin-bottom: 40px;
-    margin-top: 40px;
-  }
-  #bussiness .teaser img {
-    margin-top: 25px;
-  }
-
-  #news .row {
-    margin-bottom: 40px;
-    display: flex;
-    flex-flow: column;
-  }
-  #news .row .col-md-3 {
-    order: 1;
-  }
-  #news .row .col-md-2 {
-    order: 2;
-  }
-  #news .row .col-md-7 {
-    order: 3;
-  }
-  #news .row .col-md-10 {
-    order: 4;
-  }
-
-  .col-md-2 {
-    padding: 0 !important;
-  }
-  .col-md-2 button {
-    height: 79px;
-    width: 100%;
-    text-align: center;
-  }
-
-  #banderol {
-    margin-top: 90px;
-  }
-  #banderol .banner img {
-    margin-bottom: 25px;
-  }
-  #banderol .banner img:last-of-type {
-    margin-bottom: 40px;
-  }
-
-  .btn-more {
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 20px;
-    height: 40px;
-    margin: 50px auto;
-    padding-top: 1.5%;
-    text-align: center;
-    width: 50%;
-  }
-  .btn-more span {
-    background-color: #fff;
-    border-radius: 2px;
-    color: #cf1922;
-    font-size: 15px;
-    margin-right: 10px;
-    padding: 1px 3px;
-  }
-
-  .thumbnails-wth-btn li:first-child,
-  .thumbnails-wth-btn li:last-child {
-    display: none;
-  }
-
-  .directions {
-    display: none;
-  }
-
-  .map img {
-    display: none;
-  }
-
-  .onsen-facility .col-md-7 {
-    order: 1;
-  }
-  .onsen-facility .col-md-5 {
-    order: 2;
-  }
-
-  .onsen-facility.small {
-    margin-bottom: 10px !important;
-    width: 100%;
-  }
 }

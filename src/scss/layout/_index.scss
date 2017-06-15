@@ -75,11 +75,11 @@
   li {
     border-bottom: 1px solid $black;
     padding: 15px 0;
+  }
 
-    &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    }
+  &:hover {
+  cursor: pointer;
+  text-decoration: underline;
   }
 }
 

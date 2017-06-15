@@ -451,7 +451,7 @@ li.active {
 .faci-description ul li {
   display: inline-block;
   float: left;
-  margin-right: 1.2%;
+  margin-right: 1.1%;
   opacity: .6;
   width: 24%;
 }
@@ -459,16 +459,17 @@ li.active {
   display: block;
   width: 100%;
 }
-.faci-description ul img {
+.faci-description ul:last-child {
+  margin-right: 0;
+}
+
+.faci-description ul li img {
   display: block;
   padding-left: 0;
   width: 100%;
 }
-.faci-description ul:hover {
+.faci-description ul li:hover {
   opacity: 1;
-}
-.faci-description ul:last-child {
-  margin-right: 0;
 }
 
 .faci-description .text {
@@ -488,14 +489,6 @@ li.active {
   margin-right: 1.4%;
   opacity: .6;
   width: 23.6%;
-}
-.small img {
-  display: block;
-  padding-left: 0;
-  width: 100%;
-}
-.small:hover {
-  opacity: 1;
 }
 
 .feature-btn .btn-more {

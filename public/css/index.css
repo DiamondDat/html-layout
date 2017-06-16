@@ -118,6 +118,11 @@ table {
     display: none;
   }
 
+  .feature-btn img {
+    margin-top: 80px;
+    margin-bottom: 25px;
+  }
+
   .directions {
     display: none;
   }
@@ -351,7 +356,7 @@ footer img {
 .bannerarea .thumbnails li {
   position: relative;
 }
-.bannerarea .thumbnails:hover .overlay {
+.bannerarea .thumbnails li:hover .overlay {
   height: 30%;
 }
 .bannerarea .memo {
@@ -451,9 +456,14 @@ li.active {
 .faci-description ul li {
   display: inline-block;
   float: left;
-  margin-right: 1.1%;
+  margin-right: 1%;
   opacity: .6;
   width: 24%;
+}
+.faci-description ul img {
+  display: block;
+  padding-left: 0;
+  width: 100%;
 }
 .faci-description ul:hover .text {
   display: block;
@@ -463,11 +473,6 @@ li.active {
   margin-right: 0;
 }
 
-.faci-description ul li img {
-  display: block;
-  padding-left: 0;
-  width: 100%;
-}
 .faci-description ul li:hover {
   opacity: 1;
 }
@@ -592,6 +597,7 @@ li.active {
 .news .col-lg-10,
 .news .col-lg-7 {
   padding-left: 30px;
+  text-align: left;
 }
 .news img {
   border-radius: 5px;
@@ -625,7 +631,7 @@ li.active {
   padding-top: 10px;
 }
 .media .row {
-  border-bottom: solid 1px #000;
+  border-bottom: 1px solid #000;
 }
 .media .col-md-8 {
   text-align: justify;

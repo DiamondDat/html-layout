@@ -152,10 +152,10 @@
     li {
       position: relative;
     }
+  }
 
-    &:hover .overlay {
-      height: 30%;
-    }
+  .thumbnails li:hover .overlay {
+    height: 30%;
   }
 
   .memo {
@@ -278,10 +278,17 @@ li.active {
   li {
     display: inline-block;
     float: left;
-    margin-right: 1.1%;
+    margin-right: 1%;
     opacity: .6;
     width: 24%;
   }
+
+  img {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+
 
   &:hover .text {
     display: block;
@@ -294,11 +301,6 @@ li.active {
 }
 
 .faci-description ul li {
-  img {
-    display: block;
-    padding-left: 0;
-    width: 100%;
-  }
 
   &:hover {
     opacity: 1;

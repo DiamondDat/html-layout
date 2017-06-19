@@ -1,4 +1,4 @@
-@media (max-width:1200px) {
+@media (max-width:992px) {
   // ================================
   //  Modified Bootstrap Grid
   // ================================
@@ -77,21 +77,33 @@
     }
   }
 
+  a.call-for-action {
+     width: 100%;
+
+     img {
+      width: 100%;
+    }
+  }
+
+.bannerarea {
+
+    .text {
+      font-size: 200px;
+    }
+
+    .thumbnails {
+      cursor: pointer;
+
+      li,
+      img {
+        height: 360px;
+        width: 470px;
+      }
+    }
+  }
+
   .feature-btn img {
     margin-top: 80px;
     margin-bottom: 25px;
-  }
-
-  .directions {
-    display: none;
-  }
-
-  .map img {
-    display: none;
-  }
-
-  .onsen-facility.small {
-    margin-bottom: 10px !important;
-    width: 100%;
   }
 }

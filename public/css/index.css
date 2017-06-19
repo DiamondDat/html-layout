@@ -52,7 +52,14 @@ table {
   padding-right: 0;
 }
 
-@media (max-width: 1200px) {
+.row-eq-height {
+  height: 30% !important;
+}
+.row-eq-height .col-md-5 {
+  height: 100%;
+}
+
+@media (max-width: 992px) {
   .hero {
     background-image: url("/img/mobile-header.png");
     background-position: center center;
@@ -118,22 +125,28 @@ table {
     display: none;
   }
 
+  a.call-for-action {
+    width: 100%;
+  }
+  a.call-for-action img {
+    width: 100%;
+  }
+
+  .bannerarea .text {
+    font-size: 200px;
+  }
+  .bannerarea .thumbnails {
+    cursor: pointer;
+  }
+  .bannerarea .thumbnails li,
+  .bannerarea .thumbnails img {
+    height: 360px;
+    width: 470px;
+  }
+
   .feature-btn img {
     margin-top: 80px;
     margin-bottom: 25px;
-  }
-
-  .directions {
-    display: none;
-  }
-
-  .map img {
-    display: none;
-  }
-
-  .onsen-facility.small {
-    margin-bottom: 10px !important;
-    width: 100%;
   }
 }
 h1,
@@ -234,12 +247,12 @@ footer img {
 }
 
 .home-hero {
-  background-color: #000;
+  background-color: #302d29;
 }
 .home-hero img {
   display: block;
-  margin: 0 auto 34px;
-  width: 85%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .order {
@@ -254,7 +267,7 @@ footer img {
   border-radius: 4px;
   cursor: pointer;
   margin: 24px auto;
-  width: 90%;
+  width: 100%;
 }
 .row.search-box h4 {
   text-align: left;
@@ -290,7 +303,7 @@ footer img {
   display: block;
   height: 25%;
   margin: 25px auto 50px;
-  width: 70%;
+  width: 80%;
 }
 .call-for-action img {
   display: block;
@@ -339,7 +352,7 @@ footer img {
 }
 .bannerarea .text {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   left: 50%;
   overflow: hidden;
   position: absolute;
@@ -356,9 +369,6 @@ footer img {
 .bannerarea .thumbnails li {
   position: relative;
 }
-.bannerarea .thumbnails li:hover .overlay {
-  height: 30%;
-}
 .bannerarea .memo {
   border-top: solid 10px #55866b;
 }
@@ -370,6 +380,10 @@ footer img {
 }
 .bannerarea .free-bus {
   border-top: solid 10px #d0121b;
+}
+
+.bannerarea li:hover .overlay {
+  height: 30%;
 }
 
 .dots {
@@ -388,6 +402,29 @@ footer img {
 
 li.active {
   opacity: 1;
+}
+
+.facilites {
+  width: 100%;
+}
+.facilites .container {
+  margin: 16px auto 106px;
+}
+
+.btn-hidden {
+  width: 100%;
+}
+.btn-hidden span {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 15px;
+  padding: 3px;
+}
+.btn-hidden .text {
+  color: #fff;
+  display: inline-block;
+  transform: rotate(90deg);
 }
 
 .directions.thumbnails {
@@ -430,7 +467,7 @@ li.active {
   padding-left: 10%;
 }
 .onsen-facility .faci-description p:first-of-type {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 30px;
   padding-left: 10%;
 }
@@ -460,40 +497,50 @@ li.active {
   opacity: .6;
   width: 24%;
 }
+.faci-description ul li:hover {
+  opacity: 1;
+}
+.faci-description ul li:last-child {
+  margin-right: 0;
+}
 .faci-description ul img {
   display: block;
   padding-left: 0;
   width: 100%;
 }
-.faci-description ul:hover .text {
+
+.faci-description li:hover .arrow-box {
+  background: #f5efe9;
+  border: 4px solid #f5efe9;
   display: block;
-  width: 100%;
+  position: relative;
 }
-.faci-description ul:last-child {
-  margin-right: 0;
+.faci-description li:hover .arrow-box:after,
+.faci-description li:hover .arrow-box:before {
+  border: solid transparent;
+  bottom: 100%;
+  content: " ";
+  height: 0;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+.faci-description li:hover .arrow-box:after {
+  border-bottom-color: #f5efe9;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 20px;
+  margin-left: -20px;
+}
+.faci-description li:hover .arrow-box:before {
+  border-bottom-color: #f5efe9;
+  border-color: transparent;
+  border-width: 26px;
+  margin-left: -26px;
 }
 
-.faci-description ul li:hover {
-  opacity: 1;
-}
-
-.faci-description .text {
+.faci-description .arrow-box {
   display: none;
-}
-
-.small {
-  margin: 0 auto 110px !important;
-  width: 80%;
-}
-.small p {
-  font-size: 15px !important;
-}
-.small ul li {
-  display: inline-block;
-  float: left;
-  margin-right: 1.4%;
-  opacity: .6;
-  width: 23.6%;
 }
 
 .feature-btn .btn-more {
@@ -508,7 +555,7 @@ li.active {
 .feature-btn-sm {
   display: block;
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
 }
 .feature-btn-sm:hover {
   opacity: .7;
@@ -516,7 +563,7 @@ li.active {
 
 .feature {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 .feature .col-md-6 {
   padding-top: 30px;
@@ -528,14 +575,14 @@ li.active {
 }
 .feature .furo-zuki img {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .feature .furo-zuki span {
   display: block;
   margin: auto;
   position: absolute;
   width: 85%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .info {
@@ -618,7 +665,7 @@ li.active {
   border-bottom: 1px solid #000;
   padding: 15px 0;
 }
-.list-event:hover {
+.list-event li:hover {
   cursor: pointer;
   text-decoration: underline;
 }

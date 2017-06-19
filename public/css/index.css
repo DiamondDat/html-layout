@@ -61,8 +61,6 @@ table {
 
 @media (min-width: 1200px) {
   .container {
-    margin-left: 97px !important;
-    margin-right: 87px !important;
     width: 1004px !important;
   }
 }
@@ -351,6 +349,7 @@ footer img {
   background-size: cover;
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 }
 .bannerarea h2 {
   margin-top: 0;
@@ -360,15 +359,16 @@ footer img {
   background-color: #000;
   bottom: 0;
   height: 0;
-  left: 15px;
+  left: 0;
   opacity: .6;
   overflow: hidden;
   position: absolute;
-  right: 15px;
+  right: 0;
   transition: .5s ease;
-  width: 87.6%;
+  width: 100%;
 }
 .bannerarea .text {
+  -ms-transform: translate(-50%, -50%);
   color: #fff;
   font-size: 15px;
   left: 50%;
@@ -376,19 +376,18 @@ footer img {
   position: absolute;
   text-align: left;
   top: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 .bannerarea .banner-item {
-  position: relative;
   cursor: pointer;
+  position: relative;
 }
 .bannerarea .banner-item img {
   border-radius: 4px;
   width: 100%;
 }
-.bannerarea .banner-item .col-md-3 {
+.bannerarea .banner-item.col-md-3 {
   padding-left: 0;
 }
 .bannerarea .memo {
@@ -411,6 +410,7 @@ footer img {
 .dots {
   cursor: pointer;
   margin-left: 45%;
+  margin-top: 30px;
 }
 .dots li {
   background: #000;
@@ -438,8 +438,8 @@ li.active {
 }
 .btn-hidden span {
   background-color: transparent;
-  border: 2px solid #fff;
   border-radius: 50%;
+  border: 2px solid #fff;
   margin-left: 15px;
   padding: 3px;
 }
@@ -612,8 +612,8 @@ li.active {
   background-image: url("/img/info.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 .info h2 {
   padding-top: 25px;
@@ -621,19 +621,16 @@ li.active {
 .info ul {
   padding-bottom: 25px;
 }
-.info .info-news:first-of-type {
-  margin-left: 8%;
-}
 .info .info-news {
-  display: inline-block;
   background-color: #fff;
   border: solid 5px #cf1922;
+  display: inline-block;
   height: 315px;
-  width: 315px;
-  margin-right: 15px;
   margin-bottom: 25px;
-  text-align: left;
+  margin-right: 15px;
   padding: 15px;
+  text-align: left;
+  width: 315px;
 }
 .info .info-news:last-of-type {
   margin-right: 0;
@@ -647,11 +644,11 @@ li.active {
 
 .btn-next {
   float: right;
-  left: 93%;
+  left: 92%;
 }
 
 .btn-pre {
-  margin-left: 24px;
+  margin-left: 30px;
   margin-right: 20px;
 }
 

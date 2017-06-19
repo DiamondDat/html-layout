@@ -114,6 +114,7 @@
   background-size: cover;
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 
   h2 {
     margin-top: 0;
@@ -124,16 +125,17 @@
     background-color: $black;
     bottom: 0;
     height: 0;
-    left: 15px;
+    left: 0;
     opacity: .6;
     overflow: hidden;
     position: absolute;
-    right: 15px;
+    right: 0;
     transition: .5s ease;
-    width: 87.6%;
+    width: 100%;
   }
 
   .text {
+    -ms-transform: translate(-50%, -50%);
     color: $white;
     font-size: 15px;
     left: 50%;
@@ -141,14 +143,13 @@
     position: absolute;
     text-align: left;
     top: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
   }
 
   .banner-item {
-    position: relative;
     cursor: pointer;
+    position: relative;
 
     img {
       border-radius: 4px;
@@ -156,7 +157,7 @@
     }
   }
 
-  .banner-item .col-md-3 {
+  .banner-item.col-md-3 {
     padding-left: 0;
   }
 
@@ -184,6 +185,7 @@
 .dots {
   cursor: pointer;
   margin-left: 45%;
+  margin-top: 30px;
 
   li {
     background: $black;
@@ -217,8 +219,8 @@ li.active {
 
   span {
     background-color: transparent;
-    border: 2px solid $white;
     border-radius: 50%;
+    border: 2px solid $white;
     margin-left: 15px;
     padding: 3px;
   }
@@ -436,8 +438,8 @@ li.active {
   background-image: url('/img/info.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   position: relative;
+  width: 100%;
 
   h2 {
     padding-top: 25px;
@@ -446,20 +448,16 @@ li.active {
   ul {
     padding-bottom: 25px;
   }
-
-  .info-news:first-of-type {
-    margin-left: 8%;
-  }
   .info-news {
-    display: inline-block;
     background-color: $white;
     border: solid 5px $red;
+    display: inline-block;
     height: 315px;
-    width: 315px;
-    margin-right: 15px;
     margin-bottom: 25px;
-    text-align: left;
+    margin-right: 15px;
     padding: 15px;
+    text-align: left;
+    width: 315px;
   }
 
   .info-news:last-of-type {
@@ -476,10 +474,10 @@ li.active {
 
 .btn-next {
   float: right;
-  left: 93%;
+  left: 92%;
 }
 
 .btn-pre {
-  margin-left: 24px;
+  margin-left: 30px;
   margin-right: 20px;
 }

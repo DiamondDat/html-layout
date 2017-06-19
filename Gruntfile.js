@@ -101,7 +101,7 @@
         },
         html: {
           files: [
-            '<%= srcPath %>/html/*.html'
+            '<%= srcPath %>/html/**/*.html'
           ],
           tasks: ['html']
         }

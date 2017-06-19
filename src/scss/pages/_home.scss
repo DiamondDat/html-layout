@@ -198,7 +198,7 @@ li.active {
 // Facilities
 // ==================================
 
-.facilites {
+.facilities {
   width: 100%;
 
   .container {
@@ -325,15 +325,17 @@ li.active {
 }
 
 .faci-description li:hover {
+
   .arrow-box {
-    background: $light-yellow;
-    border: 4px solid $light-yellow;
     display: block;
+    background: $light-yellow;
+    border: 1px solid $light-yellow;
     position: relative;
   }
 
   .arrow-box:after,
   .arrow-box:before {
+    display: block;
     border: solid transparent;
     bottom: 100%;
     content: " ";
@@ -346,15 +348,15 @@ li.active {
 
   .arrow-box:after {
     border-bottom-color: $light-yellow;
-    border-color: rgba(255, 255, 255, 0);
-    border-width: 20px;
-    margin-left: -20px;
+    border-color: rgba(245, 239, 233, 0);
+    border-width: 30px;
+    margin-left: -30px;
   }
   .arrow-box:before {
     border-bottom-color: $light-yellow;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 26px;
-    margin-left: -26px;
+    border-color: rgba(245, 239, 233, 0);
+    border-width: 31px;
+    margin-left: -31px;
   }
 }
 
@@ -371,7 +373,7 @@ li.active {
   .btn-more {
     margin-bottom: 20px;
     padding-bottom: 45px;
-    width: 80%;
+    width: 100%;
   }
 
   &:hover {
@@ -393,7 +395,7 @@ li.active {
   margin: 0 auto;
   width: 100%;
 
-  .col-md-6 {
+  .col-md-5 {
     padding-top: 30px;
   }
 
@@ -428,6 +430,8 @@ li.active {
   background-image: url('/img/info.png');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  position: relative;
 
   h2 {
     padding-top: 25px;
@@ -437,10 +441,39 @@ li.active {
     padding-bottom: 25px;
   }
 
+  .info-news:first-of-type {
+    margin-left: 8%;
+  }
   .info-news {
+    display: inline-block;
     background-color: $white;
     border: solid 3px $red;
-    padding: 10px;
+    height: 315px;
+    width: 315px;
+    margin-right: 15px;
+    margin-bottom: 25px;
     text-align: left;
+    padding: 15px;
   }
+
+  .info-news:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+.btn-next,
+.btn-pre {
+  position: absolute;
+  top: 50%;
+}
+
+.btn-next {
+  float: right;
+  left: 93%;
+}
+
+.btn-pre {
+  margin-left: 24px;
+  margin-right: 20px;
 }

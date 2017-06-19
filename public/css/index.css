@@ -615,7 +615,7 @@ li.active {
 .info .info-news {
   display: inline-block;
   background-color: #fff;
-  border: solid 3px #cf1922;
+  border: solid 5px #cf1922;
   height: 315px;
   width: 315px;
   margin-right: 15px;

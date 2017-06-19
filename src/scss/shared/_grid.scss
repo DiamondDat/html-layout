@@ -14,3 +14,11 @@
     height: 100%;
   }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: 97px !important;
+    margin-right: 87px !important;
+    width: 1004px !important;
+  }
+}

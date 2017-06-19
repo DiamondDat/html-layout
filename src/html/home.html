@@ -81,32 +81,32 @@
 <!-- Banner Area-->
 <div class="bannerarea">
   <h2>おすすめのキャンペーン</h2>
-  <ul class="thumbnails thumbnails-wth-btn">
-    <li>
-      <img src="/img/bannerarea/button-pre.png" alt="button Pre" class="button-pre visible-md visible-lg">
-    </li>
-    <li>
-      <div class="visible-lg visible-md">
-        <img src="/img/bannerarea/banner_col_1.png" alt="Banner 1" class="memo">
-        <div class="overlay">
-          <div class="text">
-            真似したくなる、思い出たち
-            <h5>伊豆グルメバイキング</h5>
+  <div class="btn-pre">
+    <img src="/img/bannerarea/button-pre.png" alt="button Pre" class="button-pre visible-md visible-lg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="banner-item col-md-3">
+        <div class="visible-md visible-lg">
+          <img src="/img/bannerarea/banner_col_1.png" alt="Banner 1" class="memo">
+          <div class="overlay">
+            <div class="text">
+              真似したくなる、思い出たち
+              <h5>伊豆グルメバイキング</h5>
+            </div>
+          </div>
+         </div>
+        <div class="visible-sm visible-xs">
+          <img src="/img/bannerarea/banner1.png" alt="Banner 1 Small">
+          <div class="overlay">
+            <div class="text">
+              真似したくなる、思い出たち
+              <h3>想い出見本市</h3>
+            </div>
           </div>
         </div>
       </div>
-      <div class="visible-sm visible-xs">
-        <img src="/img/bannerarea/banner1.png" alt="Banner 1 Small">
-        <div class="overlay">
-          <div class="text">
-            真似したくなる、思い出たち
-            <h3>想い出見本市</h3>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="hidden-xs hidden-sm">
-      <div class="visible-lg visible-md">
+      <div class="banner-item col-md-3 visible-lg visible-md">
         <img src="/img/bannerarea/banner_col_2.png" alt="Banner 2" class="nishiizu">
         <div class="overlay">
           <div class="text">
@@ -114,9 +114,7 @@
           </div>
         </div>
       </div>
-    </li>
-    <li class="hidden-xs hidden-sm">
-      <div class="visible-lg visible-md">
+      <div class="banner-item col-md-3 visible-lg visible-md">
         <img src="/img/bannerarea/banner_col_3.png" alt="Banner 3" class="seafood">
         <div class="overlay">
           <div class="text">
@@ -125,9 +123,7 @@
           </div>
         </div>
       </div>
-    </li>
-    <li class="hidden-xs hidden-sm">
-      <div class="visible-lg visible-md">
+      <div class="banner-item col-md-3 visible-lg visible-md">
         <img src="/img/bannerarea/banner_col_4.png" alt="Banner 4" class="free-bus">
         <div class="overlay">
           <div class="text">
@@ -136,12 +132,12 @@
           </div>
         </div>
       </div>
-    </li>
-    <li>
-      <img src="/img/bannerarea/button-red.png" alt="button Red" class="button-red visible-md visible-lg">
-      <img src="/img/bannerarea/button-black.png" alt="button Black" class="button-black visible-md visible-lg">
-    </li>
-  </ul>
+    </div>
+  </div>
+  <div class="btn-next">
+    <img src="/img/bannerarea/button-red.png" alt="button Red" class="button-red visible-md visible-lg">
+    <img src="/img/bannerarea/button-black.png" alt="button Black" class="button-black visible-md visible-lg">
+  </div>
 
   <ul class="dots visible-md visible-lg">
     <li class="active"><span></span></li>
@@ -158,7 +154,7 @@
 </div>
 
 <!-- Facilites -->
-<div class="facilities">
+<div class="facilities container-fluid">
   <h2>全国の大江戸温泉物語</h2>
   <ul class="directions thumbnails visible-lg visible-md">
     <li>東北</li>
@@ -169,27 +165,29 @@
     <li>四国・九州</li>
   </ul>
 
-  <div class="onsen-facility row no-gutter container">
-    <button class="btn-more btn-danger visible-sm visible-xs btn-hidden">エリアを選ぶ<span> <div class="text"> > </div> </span></button>
-    <div class="col-md-7 faci-img">
-      <img src="/img/facility/onsen-facility-1.png" alt="Onsen Facility 1">
-      <span class="budge"><img src="/img/facility/budge_red_7980.png" alt="Budge Red"></span>
-    </div>
-    <div class="col-md-5 faci-description">
-      <h4>大阪府／城崎温泉</h4>
-      <img src="/img/facility/label-1.png" alt="Label 1" class="faci-label">
-      <p>浴衣でカランコロン♪ <br> 外湯めぐりを１２０％楽しむなら、 <br> きのさき！  </p>
-      <ul>
-        <li>
-          <img src="/img/facility/onsen-faci-1-thumb-1a.png" alt="Onsen faci 1 thumb 1">
-          <div class="overlay">
-            <div class="arrow-box">浴衣で外湯めぐり浴衣で外湯めぐり浴衣で外湯めぐり浴衣で外湯めぐり</div>
-          </div>
-        </li>
-        <li><img src="/img/facility/onsen-faci-1-thumb-2.png" alt="Onsen faci 1 thumb 2"></li>
-        <li><img src="/img/facility/onsen-faci-1-thumb-3.png" alt="Onsen faci 1 thumb 3"></li>
-        <li><img src="/img/facility/onsen-faci-1-thumb-4.png" alt="Onsen faci 1 thumb 4"></li>
-      </ul>
+    <div class="container">
+      <button class="btn-more btn-danger visible-sm visible-xs btn-hidden">エリアを選ぶ<span> <div class="text"> > </div> </span></button>
+      <div class="onsen-facility row no-gutter">
+      <div class="col-md-7 faci-img">
+        <img src="/img/facility/onsen-facility-1.png" alt="Onsen Facility 1">
+        <span class="budge"><img src="/img/facility/budge_red_7980.png" alt="Budge Red"></span>
+      </div>
+      <div class="col-md-5 faci-description">
+        <h4>大阪府／城崎温泉</h4>
+        <img src="/img/facility/label-1.png" alt="Label 1" class="faci-label">
+        <p>浴衣でカランコロン♪ <br> 外湯めぐりを１２０％楽しむなら、 <br> きのさき！  </p>
+        <ul>
+          <li>
+            <img src="/img/facility/onsen-faci-1-thumb-1a.png" alt="Onsen faci 1 thumb 1">
+            <div class="overlay">
+              <div class="arrow-box">浴衣で外湯めぐり浴衣で外湯めぐり浴衣で外湯めぐり浴衣で外湯めぐり</div>
+            </div>
+          </li>
+          <li><img src="/img/facility/onsen-faci-1-thumb-2.png" alt="Onsen faci 1 thumb 2"></li>
+          <li><img src="/img/facility/onsen-faci-1-thumb-3.png" alt="Onsen faci 1 thumb 3"></li>
+          <li><img src="/img/facility/onsen-faci-1-thumb-4.png" alt="Onsen faci 1 thumb 4"></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="onsen-facility row no-gutter">
@@ -240,7 +238,7 @@
 <!-- Feature -->
 <div class="feature container">
 
-  <div class="row col-md-offset-1">
+  <div class="row col-md-offset-2">
 
     <!-- Button -->
     <a href="/news.html" class="feature-btn col-md-10">
@@ -251,7 +249,7 @@
     <div class="col-md-5"><img src="/img/feature/bus.png" alt="Bus"></div>
     <div class="col-md-5"><img src="/img/feature/party.png" alt="Party"></div>
   </div>
-  <div class="row col-md-offset-1">
+  <div class="row col-md-offset-2">
     <div class="col-md-5 col-sm-6 col-xs-6 furo-zuki">
       <span><img src="/img/feature/furo-zuki-text.png" alt="Furo Zuki Text"></span>
       <img src="/img/feature/furo-zuki.png" alt="Furo Zuki">

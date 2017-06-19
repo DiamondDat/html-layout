@@ -113,6 +113,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  position: relative;
 
   h2 {
     margin-top: 0;
@@ -123,13 +124,13 @@
     background-color: $black;
     bottom: 0;
     height: 0;
-    left: 0;
+    left: 15px;
     opacity: .6;
     overflow: hidden;
     position: absolute;
-    right: 0;
+    right: 15px;
     transition: .5s ease;
-    width: 100%;
+    width: 87.6%;
   }
 
   .text {
@@ -145,13 +146,18 @@
     white-space: nowrap;
   }
 
-  .thumbnails {
-    border-radius: 4px;
+  .banner-item {
+    position: relative;
     cursor: pointer;
 
-    li {
-      position: relative;
+    img {
+      border-radius: 4px;
+      width: 100%;
     }
+  }
+
+  .banner-item .col-md-3 {
+    padding-left: 0;
   }
 
   .memo {
@@ -171,7 +177,7 @@
   }
 }
 
-.bannerarea li:hover .overlay {
+.bannerarea .banner-item:hover .overlay {
   height: 30%;
 }
 
@@ -227,7 +233,7 @@ li.active {
 .directions.thumbnails {
   cursor: pointer;
   margin: 25px auto 10px;
-  width: 80%;
+  width: 75%;
 
   li {
     background-color: #d3d3d3;

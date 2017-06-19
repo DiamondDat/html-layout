@@ -59,6 +59,13 @@ table {
   height: 100%;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    margin-left: 97px !important;
+    margin-right: 87px !important;
+    width: 1004px !important;
+  }
+}
 @media (max-width: 992px) {
   .hero {
     background-image: url("/img/mobile-header.png");
@@ -343,6 +350,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  position: relative;
 }
 .bannerarea h2 {
   margin-top: 0;
@@ -352,13 +360,13 @@ footer img {
   background-color: #000;
   bottom: 0;
   height: 0;
-  left: 0;
+  left: 15px;
   opacity: .6;
   overflow: hidden;
   position: absolute;
-  right: 0;
+  right: 15px;
   transition: .5s ease;
-  width: 100%;
+  width: 87.6%;
 }
 .bannerarea .text {
   color: #fff;
@@ -372,12 +380,16 @@ footer img {
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-.bannerarea .thumbnails {
-  border-radius: 4px;
+.bannerarea .banner-item {
+  position: relative;
   cursor: pointer;
 }
-.bannerarea .thumbnails li {
-  position: relative;
+.bannerarea .banner-item img {
+  border-radius: 4px;
+  width: 100%;
+}
+.bannerarea .banner-item .col-md-3 {
+  padding-left: 0;
 }
 .bannerarea .memo {
   border-top: solid 10px #55866b;
@@ -392,7 +404,7 @@ footer img {
   border-top: solid 10px #d0121b;
 }
 
-.bannerarea li:hover .overlay {
+.bannerarea .banner-item:hover .overlay {
   height: 30%;
 }
 
@@ -440,7 +452,7 @@ li.active {
 .directions.thumbnails {
   cursor: pointer;
   margin: 25px auto 10px;
-  width: 80%;
+  width: 75%;
 }
 .directions.thumbnails li {
   background-color: #d3d3d3;

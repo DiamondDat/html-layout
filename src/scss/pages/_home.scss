@@ -291,7 +291,7 @@ li.active {
     }
 
     .faci-label {
-      margin: 5% 0;
+      margin: 15px 0;
       padding-left: 30px;
     }
 
@@ -320,18 +320,6 @@ li.active {
     & > img {
       height: 462px;
     }
-  }
-}
-
-.onsen-facility:first-of-type {
-  height: 365px;
-
-  .faci-description {
-    height: 365px;
-  }
-
-  .faci-img > img {
-    height: 365px;
   }
 }
 
@@ -446,6 +434,7 @@ li.active {
   ul {
     padding-bottom: 25px;
   }
+
   .info-news {
     background-color: $white;
     border: solid 5px $red;

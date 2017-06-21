@@ -410,7 +410,7 @@ li.active {
   text-align: left;
 }
 .onsen-facility .faci-description .faci-label {
-  margin: 5% 0;
+  margin: 15px 0;
   padding-left: 30px;
 }
 .onsen-facility .faci-description p {
@@ -431,16 +431,6 @@ li.active {
 }
 .onsen-facility .faci-img > img {
   height: 462px;
-}
-
-.onsen-facility:first-of-type {
-  height: 365px;
-}
-.onsen-facility:first-of-type .faci-description {
-  height: 365px;
-}
-.onsen-facility:first-of-type .faci-img > img {
-  height: 365px;
 }
 
 .faci-description ul {
@@ -763,13 +753,20 @@ li.active {
     margin-bottom: 40px;
   }
 
+  .search-box {
+    border: 0;
+  }
+  .search-box h3 {
+    font-size: 14px;
+  }
+
   .search-btn h4 {
-    font-size: 30px;
+    font-size: 14px;
     text-align: center !important;
   }
   .search-btn .glyphicon {
     float: none !important;
-    margin-left: 12px;
+    margin-left: 6px;
   }
 
   .btn-wrap {
@@ -789,38 +786,44 @@ li.active {
   }
 
   .facilities {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .onsen-facility {
-    height: 885px;
+    margin-bottom: 5px;
+    height: 442px;
     width: 100%;
+  }
+  .onsen-facility h4 {
+    background-color: #875b87;
+    color: #fff;
+    font-size: 10px !important;
+    margin-top: 0;
+    padding: 5px 15px;
+    text-align: left;
+  }
+  .onsen-facility .faci-label {
+    height: 15px;
   }
   .onsen-facility .faci-img {
-    height: 365px;
+    height: 183px;
   }
   .onsen-facility .faci-img > img {
-    height: 365px;
+    height: 183px;
+    width: 100%;
   }
   .onsen-facility .faci-description {
-    height: 520px;
+    height: 263px;
   }
   .onsen-facility .faci-description p {
-    font-size: 40px;
+    font-size: 21px;
   }
 
-  .onsen-facility.row:first-of-type {
-    height: 885px;
+  .faci-description ul {
+    bottom: 17px;
   }
-  .onsen-facility.row:first-of-type .faci-description {
-    height: 520px;
-  }
-  .onsen-facility.row:first-of-type .faci-img {
-    height: 365px;
-  }
-  .onsen-facility.row:first-of-type .faci-img > img {
-    height: 365px;
-    width: 100%;
+  .faci-description ul li img {
+    height: 88px;
   }
 
   .onsen-facility.row {
@@ -832,7 +835,7 @@ li.active {
     font-size: 16px;
   }
   .bannerarea .banner-item:first-of-type {
-    margin-left: 30px;
+    margin-left: 100px;
   }
   .bannerarea .thumbnails {
     cursor: pointer;
@@ -852,6 +855,7 @@ li.active {
   }
 
   .info .info-news:first-of-type {
-    margin-left: 10px !important;
+    margin-bottom: 20px;
+    margin-left: 50px;
   }
 }

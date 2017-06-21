@@ -3,7 +3,6 @@
 @import 'shared/variables';
 @import 'shared/sanitize';
 @import 'shared/grid';
-@import 'shared/responsive';
 @import 'shared/typography';
 @import 'shared/header';
 @import 'shared/footer';
@@ -13,3 +12,5 @@
 
 @import 'pages/home';
 @import 'pages/index';
+
+@import 'shared/responsive';

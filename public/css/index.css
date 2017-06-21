@@ -62,106 +62,15 @@ table {
 @media (min-width: 1200px) {
   .container {
     width: 1004px !important;
-  }
-}
-@media (max-width: 992px) {
-  .hero {
-    background-image: url("/img/mobile-header.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
-  .bussiness {
-    margin-bottom: 40px;
-    margin-top: 40px;
-  }
-  .bussiness .teaser img {
-    margin-top: 25px;
-  }
-
-  .news .row {
-    margin-bottom: 40px;
-  }
-
-  .col-md-2 {
-    padding: 0 !important;
-  }
-  .col-md-2 button {
-    height: 79px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .banderol {
-    margin-top: 90px;
-  }
-  .banderol .banner img {
-    margin-bottom: 25px;
-  }
-  .banderol .banner img:last-of-type {
-    margin-bottom: 40px;
-  }
-
-  .btn-more {
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 20px;
-    height: 40px;
-    margin: 50px auto;
-    padding-top: 1.5%;
-    text-align: center;
-    width: 50%;
-  }
-  .btn-more span {
-    background-color: #fff;
-    border-radius: 2px;
-    color: #cf1922;
-    font-size: 15px;
-    margin-right: 10px;
-    padding: 1px 3px;
-  }
-
-  .facilities .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 5px !important;
-  }
-
-  .thumbnails-wth-btn li:first-child,
-  .thumbnails-wth-btn li:last-child {
-    display: none;
-  }
-
-  a.call-for-action {
-    width: 100%;
-  }
-  a.call-for-action img {
-    width: 100%;
-  }
-
-  .bannerarea .text {
-    font-size: 200px;
-  }
-  .bannerarea .thumbnails {
-    cursor: pointer;
-  }
-  .bannerarea .thumbnails li,
-  .bannerarea .thumbnails img {
-    height: 360px;
-    width: 470px;
-  }
-
-  .feature-btn img {
-    margin-top: 80px;
-    margin-bottom: 25px;
-  }
-
-  .info .info-news:first-of-type {
-    margin-left: 10px !important;
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 h1,
@@ -316,9 +225,7 @@ footer img {
 
 .call-for-action {
   display: block;
-  height: 25%;
   margin: 25px auto 50px;
-  width: 80%;
 }
 .call-for-action img {
   display: block;
@@ -382,13 +289,17 @@ footer img {
 .bannerarea .banner-item {
   cursor: pointer;
   position: relative;
+  width: 228px;
+  height: 228px;
+  margin-right: 30px;
+}
+.bannerarea .banner-item:last-of-type {
+  margin-right: 0;
 }
 .bannerarea .banner-item img {
   border-radius: 4px;
   width: 100%;
-}
-.bannerarea .banner-item.col-md-3 {
-  padding-left: 0;
+  height: 228px;
 }
 .bannerarea .memo {
   border-top: solid 10px #55866b;
@@ -405,6 +316,14 @@ footer img {
 
 .bannerarea .banner-item:hover .overlay {
   height: 30%;
+}
+
+.bannerarea .btn-pre {
+  top: 40%;
+}
+
+.bannerarea .btn-next {
+  top: 25%;
 }
 
 .dots {
@@ -430,12 +349,10 @@ li.active {
   width: 100%;
 }
 .facilities .container {
-  margin: 16px auto 106px;
+  margin-top: 16px;
+  margin-bottom: 106px;
 }
 
-.btn-hidden {
-  width: 100%;
-}
 .btn-hidden span {
   background-color: transparent;
   border-radius: 50%;
@@ -452,7 +369,7 @@ li.active {
 .directions.thumbnails {
   cursor: pointer;
   margin: 25px auto 10px;
-  width: 75%;
+  width: 943px;
 }
 .directions.thumbnails li {
   background-color: #d3d3d3;
@@ -467,14 +384,22 @@ li.active {
   border-radius: 0 4px 4px 0;
 }
 
-.onsen-facility {
+.onsen-facility.row {
+  margin-left: 0;
   margin-bottom: 10px;
+}
+
+.onsen-facility {
+  width: 100%;
+  height: 462px;
 }
 .onsen-facility .faci-description {
   background-image: url("/img/facility/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: solid 3px #875b87;
+  height: 462px;
+  position: relative;
 }
 .onsen-facility .faci-description h4 {
   background-color: #875b87;
@@ -486,15 +411,12 @@ li.active {
 }
 .onsen-facility .faci-description .faci-label {
   margin: 5% 0;
-  padding-left: 10%;
+  padding-left: 30px;
 }
-.onsen-facility .faci-description p:first-of-type {
+.onsen-facility .faci-description p {
   font-size: 25px;
   margin-bottom: 30px;
-  padding-left: 10%;
-}
-.onsen-facility .faci-description p:last-of-type {
-  margin-left: 15px;
+  padding: 0 30px;
 }
 .onsen-facility .faci-img img {
   display: block;
@@ -507,8 +429,23 @@ li.active {
   position: absolute;
   top: 5%;
 }
+.onsen-facility .faci-img > img {
+  height: 462px;
+}
+
+.onsen-facility:first-of-type {
+  height: 365px;
+}
+.onsen-facility:first-of-type .faci-description {
+  height: 365px;
+}
+.onsen-facility:first-of-type .faci-img > img {
+  height: 365px;
+}
 
 .faci-description ul {
+  position: absolute;
+  bottom: 15px;
   cursor: pointer;
   width: 100%;
 }
@@ -529,41 +466,6 @@ li.active {
   display: block;
   padding-left: 0;
   width: 100%;
-}
-
-.faci-description li:hover .arrow-box {
-  display: block;
-  background: #f5efe9;
-  border: 1px solid #f5efe9;
-  position: relative;
-}
-.faci-description li:hover .arrow-box:after,
-.faci-description li:hover .arrow-box:before {
-  display: block;
-  border: solid transparent;
-  bottom: 100%;
-  content: " ";
-  height: 0;
-  left: 50%;
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-}
-.faci-description li:hover .arrow-box:after {
-  border-bottom-color: #f5efe9;
-  border-color: rgba(245, 239, 233, 0);
-  border-width: 30px;
-  margin-left: -30px;
-}
-.faci-description li:hover .arrow-box:before {
-  border-bottom-color: #f5efe9;
-  border-color: rgba(245, 239, 233, 0);
-  border-width: 31px;
-  margin-left: -31px;
-}
-
-.faci-description .arrow-box {
-  display: none;
 }
 
 .feature-btn .btn-more {
@@ -618,6 +520,11 @@ li.active {
 .info h2 {
   padding-top: 25px;
 }
+.info a,
+.info h5 {
+  color: #000;
+  text-align: left;
+}
 .info ul {
   padding-bottom: 25px;
 }
@@ -644,12 +551,16 @@ li.active {
 
 .btn-next {
   float: right;
-  left: 92%;
+  right: 20px;
 }
 
 .btn-pre {
-  margin-left: 30px;
-  margin-right: 20px;
+  left: 20px;
+}
+
+.btn-next:hover,
+.btn-pre:hover {
+  cursor: pointer;
 }
 
 .hero {
@@ -804,4 +715,143 @@ li.active {
 }
 .banderol .col-md-12 img {
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .hero {
+    background-image: url("/img/mobile-header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .bussiness {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .bussiness .teaser img {
+    margin-top: 25px;
+  }
+
+  .news.row {
+    margin-bottom: 40px;
+  }
+
+  .col-md-2 {
+    padding: 0 !important;
+  }
+  .col-md-2 button {
+    height: 79px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .banderol {
+    margin-top: 90px;
+  }
+  .banderol .banner img {
+    margin-bottom: 25px;
+  }
+  .banderol .banner img:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .search-btn h4 {
+    font-size: 30px;
+    text-align: center !important;
+  }
+  .search-btn .glyphicon {
+    float: none !important;
+    margin-left: 12px;
+  }
+
+  .btn-wrap {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .btn-wrap .btn-hidden {
+    width: 100%;
+  }
+
+  .facilities .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .facilities {
+    margin-bottom: 80px;
+  }
+
+  .onsen-facility {
+    height: 885px;
+    width: 100%;
+  }
+  .onsen-facility .faci-img {
+    height: 365px;
+  }
+  .onsen-facility .faci-img > img {
+    height: 365px;
+  }
+  .onsen-facility .faci-description {
+    height: 520px;
+  }
+  .onsen-facility .faci-description p {
+    font-size: 40px;
+  }
+
+  .onsen-facility.row:first-of-type {
+    height: 885px;
+  }
+  .onsen-facility.row:first-of-type .faci-description {
+    height: 520px;
+  }
+  .onsen-facility.row:first-of-type .faci-img {
+    height: 365px;
+  }
+  .onsen-facility.row:first-of-type .faci-img > img {
+    height: 365px;
+    width: 100%;
+  }
+
+  .onsen-facility.row {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .bannerarea .text {
+    font-size: 16px;
+  }
+  .bannerarea .banner-item:first-of-type {
+    margin-left: 30px;
+  }
+  .bannerarea .thumbnails {
+    cursor: pointer;
+  }
+  .bannerarea .thumbnails img {
+    height: 360px;
+    width: 470px;
+  }
+
+  .feature a img {
+    padding: 0 15px;
+  }
+
+  .onsen-falicility {
+    width: 100%;
+    margin: 0;
+  }
+
+  .info .info-news:first-of-type {
+    margin-left: 10px !important;
+  }
 }

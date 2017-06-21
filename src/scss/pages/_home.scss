@@ -69,9 +69,7 @@
 
 .call-for-action {
   display: block;
-  height: 25%;
   margin: 25px auto 50px;
-  width: 80%;
 
   img {
     display: block;
@@ -150,15 +148,19 @@
   .banner-item {
     cursor: pointer;
     position: relative;
+    width: 228px;
+    height: 228px;
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     img {
       border-radius: 4px;
       width: 100%;
+      height: 228px;
     }
-  }
-
-  .banner-item.col-md-3 {
-    padding-left: 0;
   }
 
   .memo {
@@ -180,6 +182,14 @@
 
 .bannerarea .banner-item:hover .overlay {
   height: 30%;
+}
+
+.bannerarea .btn-pre {
+  top: 40%;
+}
+
+.bannerarea .btn-next {
+  top: 25%;
 }
 
 .dots {
@@ -210,12 +220,12 @@ li.active {
   width: 100%;
 
   .container {
-    margin: 16px auto 106px;
+    margin-top: 16px;
+    margin-bottom: 106px;
   }
 }
 
 .btn-hidden {
-  width: 100%;
 
   span {
     background-color: transparent;
@@ -235,7 +245,7 @@ li.active {
 .directions.thumbnails {
   cursor: pointer;
   margin: 25px auto 10px;
-  width: 75%;
+  width: 943px;
 
   li {
     background-color: #d3d3d3;
@@ -253,8 +263,14 @@ li.active {
   }
 }
 
-.onsen-facility {
+.onsen-facility.row {
+  margin-left: 0;
   margin-bottom: 10px;
+}
+
+.onsen-facility {
+  width: 100%;
+  height: 462px;
 
   .faci-description {
 
@@ -262,6 +278,8 @@ li.active {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 3px $purple;
+    height: 462px;
+    position: relative;
 
     h4 {
       background-color: $purple;
@@ -274,17 +292,13 @@ li.active {
 
     .faci-label {
       margin: 5% 0;
-      padding-left: 10%;
+      padding-left: 30px;
     }
 
-    p:first-of-type {
+    p {
       font-size: 25px;
       margin-bottom: 30px;
-      padding-left: 10%;
-    }
-
-    p:last-of-type {
-      margin-left: 15px;
+      padding: 0 30px;
     }
   }
 
@@ -302,10 +316,28 @@ li.active {
       position: absolute;
       top: 5%;
     }
+
+    & > img {
+      height: 462px;
+    }
+  }
+}
+
+.onsen-facility:first-of-type {
+  height: 365px;
+
+  .faci-description {
+    height: 365px;
+  }
+
+  .faci-img > img {
+    height: 365px;
   }
 }
 
 .faci-description ul {
+  position: absolute;
+  bottom: 15px;
   cursor: pointer;
   width: 100%;
 
@@ -330,46 +362,6 @@ li.active {
     padding-left: 0;
     width: 100%;
   }
-}
-
-.faci-description li:hover {
-
-  .arrow-box {
-    display: block;
-    background: $light-yellow;
-    border: 1px solid $light-yellow;
-    position: relative;
-  }
-
-  .arrow-box:after,
-  .arrow-box:before {
-    display: block;
-    border: solid transparent;
-    bottom: 100%;
-    content: " ";
-    height: 0;
-    left: 50%;
-    pointer-events: none;
-    position: absolute;
-    width: 0;
-  }
-
-  .arrow-box:after {
-    border-bottom-color: $light-yellow;
-    border-color: rgba(245, 239, 233, 0);
-    border-width: 30px;
-    margin-left: -30px;
-  }
-  .arrow-box:before {
-    border-bottom-color: $light-yellow;
-    border-color: rgba(245, 239, 233, 0);
-    border-width: 31px;
-    margin-left: -31px;
-  }
-}
-
-.faci-description .arrow-box {
-  display: none;
 }
 
 // ========================================
@@ -445,6 +437,12 @@ li.active {
     padding-top: 25px;
   }
 
+  a,
+  h5 {
+    color: $black;
+    text-align: left;
+  }
+
   ul {
     padding-bottom: 25px;
   }
@@ -474,10 +472,14 @@ li.active {
 
 .btn-next {
   float: right;
-  left: 92%;
+  right: 20px;
 }
 
 .btn-pre {
-  margin-left: 30px;
-  margin-right: 20px;
+  left: 20px;
+}
+
+.btn-next:hover,
+.btn-pre:hover {
+  cursor: pointer;
 }

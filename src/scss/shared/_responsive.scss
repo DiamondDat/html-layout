@@ -2,6 +2,12 @@
   // ================================
   //  Modified Bootstrap Grid
   // ================================
+
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
   .hero {
     background-image: url('/img/mobile-header.png');
     background-position: center center;
@@ -20,10 +26,8 @@
     }
    }
 
-  .news {
-    .row {
-      margin-bottom: 40px;
-    }
+  .news.row {
+    margin-bottom: 40px;
    }
 
   .col-md-2 {
@@ -48,69 +52,112 @@
     }
   }
 
-  .btn-more {
-    border-radius: 5px;
-    color: $white;
-    display: block;
-    font-size: 20px;
-    height: 40px;
-    margin: 50px auto;
-    padding-top: 1.5%;
-    text-align: center;
-    width: 50%;
+  .search-btn {
+    h4 {
+      font-size: 30px;
+      text-align: center !important;
+    }
 
-    span {
-      background-color: $white;
-      border-radius: 2px;
-      color: $red;
-      font-size: 15px;
-      margin-right: 10px;
-      padding: 1px 3px;
+    .glyphicon {
+      float: none !important;
+      margin-left: 12px;
+    }
+  }
+
+  .btn-wrap {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    .btn-hidden {
+      width: 100%;
     }
   }
 
   .facilities .container {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 5px !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 
-  .thumbnails-wth-btn {
+  .facilities {
+    margin-bottom: 80px;
+  }
 
-    li:first-child,
-    li:last-child {
-      display: none;
+  .onsen-facility {
+    height: 885px;
+    width: 100%;
+
+    .faci-img {
+      height: 365px;
+
+      & > img {
+        height: 365px;
+      }
+    }
+
+    .faci-description {
+      height: 520px;
+
+      p {
+        font-size: 40px;
+      }
     }
   }
 
-  a.call-for-action {
-     width: 100%;
+  .onsen-facility.row:first-of-type {
 
-     img {
-      width: 100%;
+    height: 885px;
+
+    .faci-description {
+      height: 520px;
     }
+
+    .faci-img {
+      height: 365px;
+
+      & > img {
+        height: 365px;
+        width: 100%;
+      }
+    }
+  }
+
+  .onsen-facility.row {
+    margin-bottom: 10px;
+    margin-left: 0;
   }
 
   .bannerarea {
 
-      .text {
-        font-size: 200px;
-      }
-
-      .thumbnails {
-        cursor: pointer;
-
-        li,
-        img {
-          height: 360px;
-          width: 470px;
-        }
-      }
+    .text {
+      font-size: 16px;
     }
 
-  .feature-btn img {
-    margin-top: 80px;
-    margin-bottom: 25px;
+    .banner-item:first-of-type {
+      margin-left: 30px;
+    }
+
+    .thumbnails {
+      cursor: pointer;
+
+      img {
+        height: 360px;
+        width: 470px;
+      }
+    }
+  }
+
+  .feature a {
+    img {
+      padding: 0 15px;
+    }
+  }
+
+  .onsen-falicility {
+    width: 100%;
+    margin: 0;
   }
 
   .info .info-news:first-of-type {

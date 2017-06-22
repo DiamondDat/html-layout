@@ -518,7 +518,12 @@ button {
 .info a,
 .info h5 {
   color: #302d29;
+  font-size: 16px;
+  font-weight: bold;
   text-align: left;
+}
+.info p {
+  font-size: 12px;
 }
 .info ul {
   padding-bottom: 25px;
@@ -740,6 +745,14 @@ button {
   }
   .bussiness .teaser img {
     margin-top: 25px;
+  }
+
+  .media .btn-red {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
 
   .news.row {

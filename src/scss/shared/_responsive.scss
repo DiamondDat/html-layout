@@ -1,7 +1,11 @@
-@media (max-width:992px) {
+@media (max-width:1000px) {
   // ================================
   //  Modified Bootstrap Grid
   // ================================
+
+  h2 {
+    font-size: 27px !important;
+  }
 
   .container-fluid {
     padding-right: 0 !important;
@@ -52,11 +56,34 @@
     }
   }
 
-  .search-box {
+  .btn-more {
+    padding-top: 15px;
+  }
+
+  .call-for-action {
+    width: 100%;
+  }
+
+  .row.search-box {
     border: 0;
 
     h3 {
       font-size: 14px;
+    }
+
+    .col-md-2 button {
+      border-radius: 4px;
+    }
+  }
+
+  .order {
+
+    h3 {
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 17px;
     }
   }
 
@@ -77,16 +104,18 @@
     padding-left: 30px;
 
     .btn-hidden {
+      margin-bottom: 21px;
+      margin-top: 26px;
       width: 100%;
     }
   }
 
   .facilities .container {
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .facilities {
@@ -94,21 +123,17 @@
   }
 
   .onsen-facility {
-    margin-bottom: 5px;
     height: 442px;
-    width: 100%;
+    margin-bottom: 5px;
 
     h4 {
-      background-color: $purple;
-      color: $white;
       font-size: 10px !important;
-      margin-top: 0;
-      padding: 5px 15px;
-      text-align: left;
+      margin: 0;
     }
 
     .faci-label {
       height: 15px;
+      margin: 17px 0 !important;
     }
 
     .faci-img {
@@ -149,7 +174,7 @@
     }
 
     .banner-item:first-of-type {
-      margin-left: 100px;
+      margin-left: 23%;
     }
 
     .thumbnails {
@@ -162,19 +187,66 @@
     }
   }
 
-  .feature a {
-    img {
-      padding: 0 15px;
-    }
-  }
-
   .onsen-falicility {
     width: 100%;
     margin: 0;
   }
 
-  .info .info-news:first-of-type {
-    margin-bottom: 20px;
-    margin-left: 50px;
+  .feature {
+
+    .col-md-5 {
+      margin-top: 25px;
+    }
+
+    .col-md-5.col-xs-6 {
+      margin-top: 35px;
+    }
+  }
+
+  .info {
+
+    h2 {
+      margin-top: 41px;
+    }
+
+    .info-news:first-of-type {
+      margin-bottom: 40px;
+      margin-left: 13%;
+    }
+  }
+
+  .tag {
+    font-size: 7px;
+    margin-left: 7px;
+  }
+
+  footer {
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .facilities .row,
+  .news .row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+
+    .col-md-3,
+    .col-md-7 {
+      order: 1;
+    }
+
+    .col-md-2,
+    .col-md-5 {
+      order: 2;
+    }
+  }
+
+  .news .row {
+    .col-md-7,
+    .col-md-10 {
+      order: 3;
+    }
   }
 }

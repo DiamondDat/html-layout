@@ -65,7 +65,13 @@
 <div class="order">
   <div class="container">
     <h2>ご予約</h2>
-    <h3>1泊2食<span class="price">¥6,980〜</span>の<span class="red-underline">ベストレート価格</span>でご予約いただけます。</h3>
+    <div class="visible-lg visible-md">
+      <h3>1泊2食<span class="price">¥6,980〜</span>の<span class="red-underline">ベストレート価格</span>でご予約いただけます。</h3>
+    </div>
+    <div class="hidden-lg hidden-lg">
+      <h3>1泊2食<span class="price">¥8,990〜</span>の</h3>
+      <h3><span class="red-underline">ベストレート価格</span>でご予約いただけます。</h3>
+    </div>
     <div class="row search-box">
       <div class="col-md-5 col-sm-5 hidden-sm hidden-xs">
         <h4>
@@ -236,9 +242,6 @@
     </div><!-- /.container-fluid -->
   </nav>
 </header>
-  <div class="btn-wrap">
-    <button class="btn-more btn-danger btn-hidden">エリアを選ぶ<span> <div class="text"> > </div> </span></button>
-  </div>
 </div>
 
 <!-- Facilites -->
@@ -252,6 +255,10 @@
     <li>近畿</li>
     <li>四国・九州</li>
   </ul>
+
+  <div class="btn-wrap visible-sm visible-xs">
+    <button class="btn-more btn-danger btn-hidden"><p>エリアを選ぶ<span>V</span></p></button>
+  </div>
 
   <div class="container">
     <div class="onsen-facility row no-gutter">
@@ -286,14 +293,14 @@
       </ul>
     </div>
     <div class="col-md-7 faci-img">
-      <img src="/img/facility/onsen-facility-2.png" alt="Onsen Facility 2">
+      <img src="/img/facility/onsen-facility-2.png" alt="Onsen Facility 2 visible-lg visible-md">
       <span class="budge"><img src="/img/facility/budge_red_7980.png" alt="Budge Red"></span>
     </div>
   </div>
 
   <div class="onsen-facility row no-gutter">
     <div class="col-md-7 faci-img">
-      <img src="/img/facility/onsen-facility-3.png" alt="Onsen Facility 3">
+      <img src="/img/facility/onsen-facility-3.png" alt="Onsen Facility 3 visible-lg visible-md">
     </div>
     <div class="col-md-5 faci-description">
       <h4>栃木県／箕輪温泉</h4>
@@ -315,10 +322,12 @@
   <div class="row col-md-offset-2">
 
     <!-- Button -->
-    <a href="/news.html" class="feature-btn col-md-10">
-      <button class="btn-danger btn-more hidden-xs hidden-sm"><span>&#9654;</span>条件を指定して探す</button>
-      <img src="/img/feature/banner.png" class="feature-btn-sm hidden-lg hidden-md" alt="施設を探す">
-    </a>
+    <div class="col-md-10">
+      <a href="/news.html" class="feature-btn">
+        <button class="btn-danger btn-more hidden-xs hidden-sm"><span>&#9654;</span>条件を指定して探す</button>
+        <img src="/img/feature/banner.png" class="feature-btn-sm hidden-lg hidden-md" alt="施設を探す">
+      </a>
+    </div>
 
     <div class="col-md-5"><img src="/img/feature/bus.png" alt="Bus"></div>
     <div class="col-md-5"><img src="/img/feature/party.png" alt="Party"></div>
@@ -385,8 +394,8 @@
           </ul>
           <ul class="col-lg-3 col-sm-4 col-xs-4">
             <li><a href="/home.html">いいふろ会員</a></li>
-            <li><a href="/home.html">想い出見本市</a></li>
             <li><a href="/home.html">公式通販ショップ</a></li>
+            <li><a href="/home.html">想い出見本市</a></li>
           </ul>
         </div>
       </div>

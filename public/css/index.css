@@ -61,16 +61,16 @@ table {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1004px !important;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-left: 15px;
     margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1004px !important;
   }
 
   .container-fluid {
-    padding-right: 0 !important;
     padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 h1,
@@ -89,7 +89,7 @@ h2 {
 
 header {
   background-color: #fff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #302d29;
   margin-bottom: 0;
   text-align: right;
 }
@@ -110,7 +110,7 @@ header select {
 }
 
 footer {
-  background-color: #000;
+  background-color: #302d29;
   padding-bottom: 40px;
   padding-top: 41px;
   width: 100%;
@@ -187,27 +187,30 @@ footer img {
 
 .row.search-box {
   background-color: #fafafa;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  box-shadow: 0 1px 1px #302d29;
   cursor: pointer;
   margin: 24px auto;
   width: 100%;
 }
 .row.search-box h4 {
+  color: #999;
+  font-size: 15px;
   text-align: left;
 }
 .row.search-box .col-md-6 {
-  border-top: 1px solid #000;
+  border-top: 1px solid #ccc;
 }
 .row.search-box .col-md-6:first-child {
-  border-right: 1px solid #000;
+  border-right: 1px solid #ccc;
 }
 .row.search-box .col-md-5 {
-  border-right: 1px solid #000;
+  border-right: 1px solid #ccc;
 }
 .row.search-box .col-md-4 {
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 .row.search-box .col-md-4:last-child {
   border-right: 0;
@@ -215,13 +218,20 @@ footer img {
 .row.search-box .col-md-2 {
   padding: 0 !important;
 }
+.row.search-box .col-md-2 h4,
+.row.search-box .col-md-2 .glyphicon {
+  color: #fff;
+  font-size: 20px;
+}
 .row.search-box .col-md-2 button {
   border-radius: 0 4px 4px 0;
-  height: 79px;
+  height: 73px;
   width: 100%;
 }
 .row.search-box .glyphicon {
+  color: #302d29;
   float: right;
+  font-size: 13px;
 }
 
 .call-for-action {
@@ -256,16 +266,16 @@ footer img {
   background-image: url("/img/bannerarea/bannerarea.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  position: relative;
   padding-bottom: 50px;
+  position: relative;
+  width: 100%;
 }
 .bannerarea h2 {
   margin-top: 0;
   padding-top: 25px;
 }
 .bannerarea .overlay {
-  background-color: #000;
+  background-color: #302d29;
   bottom: 0;
   height: 0;
   left: 0;
@@ -277,7 +287,6 @@ footer img {
   width: 100%;
 }
 .bannerarea .text {
-  -ms-transform: translate(-50%, -50%);
   color: #fff;
   font-size: 15px;
   left: 50%;
@@ -285,23 +294,24 @@ footer img {
   position: absolute;
   text-align: left;
   top: 50%;
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 .bannerarea .banner-item {
   cursor: pointer;
-  position: relative;
-  width: 228px;
   height: 228px;
   margin-right: 30px;
+  position: relative;
+  width: 228px;
 }
 .bannerarea .banner-item:last-of-type {
   margin-right: 0;
 }
 .bannerarea .banner-item img {
   border-radius: 4px;
-  width: 100%;
   height: 228px;
+  width: 100%;
 }
 
 .bannerarea .banner-item:hover .overlay {
@@ -322,7 +332,7 @@ footer img {
   margin-top: 30px;
 }
 .dots li {
-  background: #000;
+  background: #302d29;
   border-radius: 50%;
   display: inline-block;
   height: 10px;
@@ -339,25 +349,25 @@ li.active {
   width: 100%;
 }
 .facilities .container {
-  margin-top: 16px;
   margin-bottom: 106px;
+  margin-top: 16px;
 }
 
 .btn-hidden {
-  height: 50px;
   font-size: 14px;
+  height: 50px;
 }
 .btn-hidden span {
-  text-align: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
   color: #fff;
   font-size: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid #fff;
+  height: 15px;
   margin-left: 7px;
   padding: auto;
+  text-align: center;
   width: 15px;
-  height: 15px;
 }
 
 .directions.thumbnails {
@@ -379,14 +389,11 @@ li.active {
 }
 
 .onsen-facility.row {
-  margin-left: 0;
+  height: 462px;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
-.onsen-facility {
-  width: 100%;
-  height: 462px;
-}
 .onsen-facility .faci-description {
   background-image: url("/img/facility/bg.png");
   background-repeat: no-repeat;
@@ -428,9 +435,9 @@ li.active {
 }
 
 .faci-description ul {
-  position: absolute;
   bottom: 15px;
   cursor: pointer;
+  position: absolute;
   width: 100%;
 }
 .faci-description ul li {
@@ -458,7 +465,7 @@ button {
 
 .feature-btn .btn-more {
   margin-bottom: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 10px;
   width: 100%;
 }
 .feature-btn:hover {
@@ -510,7 +517,7 @@ button {
 }
 .info a,
 .info h5 {
-  color: #000;
+  color: #302d29;
   text-align: left;
 }
 .info ul {
@@ -520,12 +527,13 @@ button {
   background-color: #fff;
   border: solid 5px #cf1922;
   display: inline-block;
-  height: 315px;
+  height: 314px;
   margin-bottom: 25px;
   margin-right: 15px;
+  min-width: 235px;
   padding: 15px;
   text-align: left;
-  width: 315px;
+  width: 32%;
   z-index: 1;
 }
 .info .info-news:last-of-type {
@@ -612,7 +620,7 @@ button {
 }
 
 .list-event li {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
   padding: 15px 0;
 }
 .list-event li:hover {
@@ -628,7 +636,7 @@ button {
   padding-top: 10px;
 }
 .media .row {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
 }
 .media .col-md-8 {
   text-align: justify;
@@ -688,7 +696,7 @@ button {
 }
 
 .btn-facility {
-  background-color: #000;
+  background-color: #302d29;
   border-radius: 0 0 10px 10px;
   color: #fff;
   display: block;
@@ -713,8 +721,8 @@ button {
   }
 
   .container-fluid {
-    padding-right: 0 !important;
     padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .hero {
@@ -792,8 +800,8 @@ button {
   }
 
   .btn-wrap {
-    padding-right: 30px;
     padding-left: 30px;
+    padding-right: 30px;
   }
   .btn-wrap .btn-hidden {
     margin-bottom: 21px;
@@ -842,7 +850,7 @@ button {
   .faci-description ul {
     bottom: 17px;
   }
-  .faci-description ul li img {
+  .faci-description ul img {
     height: 88px;
   }
 
@@ -866,8 +874,8 @@ button {
   }
 
   .onsen-falicility {
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
 
   .feature .col-md-5 {

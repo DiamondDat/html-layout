@@ -720,7 +720,20 @@ button {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 750px) and (max-width: 800px) {
+  .onsen-facility.row {
+    height: 625px;
+    width: 100%;
+  }
+  .onsen-facility.row .faci-img {
+    height: 365px;
+  }
+  .onsen-facility.row .faci-img > img {
+    height: 365px;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
   h2 {
     font-size: 27px !important;
   }
@@ -828,6 +841,7 @@ button {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    width: 100% !important;
   }
 
   .facilities {
@@ -836,6 +850,7 @@ button {
 
   .onsen-facility {
     height: 442px;
+    width: 100%;
     margin-bottom: 5px;
   }
   .onsen-facility h4 {
@@ -857,7 +872,7 @@ button {
     height: 263px;
   }
   .onsen-facility .faci-description p {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .faci-description ul {

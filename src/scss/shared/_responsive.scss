@@ -1,4 +1,20 @@
-@media (max-width:1000px) {
+@media (min-width:750px) and (max-width: 800px) {
+  .onsen-facility.row {
+    height: 625px;
+    width: 100%;
+
+    .faci-img {
+      height: 365px;
+
+      & > img {
+        height: 365px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width:992px) {
   // ================================
   //  Modified Bootstrap Grid
   // ================================
@@ -124,6 +140,7 @@
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    width: 100% !important;
   }
 
   .facilities {
@@ -132,6 +149,7 @@
 
   .onsen-facility {
     height: 442px;
+    width: 100%;
     margin-bottom: 5px;
 
     h4 {
@@ -157,7 +175,7 @@
       height: 263px;
 
       p {
-        font-size: 21px;
+        font-size: 17px;
       }
     }
   }
